@@ -1,6 +1,6 @@
 pipeline {
   agent {
-    docker { image 'pdhunganaa/ubuntuimage:latest' } 
+    docker { image 'pdhunganaa/myy-jenkins-with-git:latest' } 
   }
   stages {
     stage('Test') {
