@@ -1,14 +1,12 @@
 pipeline {
   agent {
-    docker { image 'pdhunganaa/myy-jenkins-with-git:latest' } 
+    docker { image 'node:17-alpine' } 
   }
   stages {
     stage('Test') {
       steps {
-        script {
-          sh 'docker --version'
+          sh 'node --version'
         }
       }
     }
   }
-}
